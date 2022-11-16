@@ -1,16 +1,20 @@
+//A package in Java is used to group related classes.
 package org.example;
-
+//importing a package of selenium.By
 import org.openqa.selenium.By;
+//An expectation for checking if the given element is selected.
 import org.openqa.selenium.support.ui.ExpectedConditions;
+//importing a package of AfterMethod
 import org.openqa.selenium.support.ui.Select;
+//Implicit Wait directs the Selenium WebDriver to wait for a certain measure of time before throwing an exception.
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+//It allows for formatting (date -> text), parsing (text -> date), and normalization.
 import java.text.SimpleDateFormat;
+//Sets the amount of time to wait for an asynchronous script to finish execution before throwing an error.
 import java.time.Duration;
-
-import static org.example.BasePage.driver;
-
+//extends keyword Is used to Inherit parent class(Utils) from Grand parent class(BasePage).
 public class Utils extends BasePage {
+    // method simulates a mouse-click on an element
     public void clickOnElement(By by) {
         driver.findElement(by).click();
     }
